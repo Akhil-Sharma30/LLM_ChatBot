@@ -1,0 +1,7 @@
+arize-phoenix 
+gcsfs 
+llama-index
+PyGithub
+gradio 
+huggingface_hub
+openai
