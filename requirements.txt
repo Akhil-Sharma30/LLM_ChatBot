@@ -1,7 +1,4 @@
-arize-phoenix 
-gcsfs 
-llama-index
+llama_index
+openai
 PyGithub
 gradio 
-huggingface_hub
-openai

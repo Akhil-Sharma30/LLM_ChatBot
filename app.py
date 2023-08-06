@@ -46,15 +46,16 @@ if os.path.exists(repo_dir):
 
 # combined_documents will be a list containing the contents of all .md files in the folder
 
-MarkdownReader = download_loader("MarkdownReader")
+RemoteReader = download_loader("RemoteReader")
 
-loader = MarkdownReader()
-document1 = loader.load_data(file=Path('Akhil-Sharma30.github.io/assets/README.md'))
-document2 = loader.load_data(file=Path('Akhil-Sharma30.github.io/content/about.md'))
-document3 = loader.load_data(file=Path('Akhil-Sharma30.github.io/content/cv.md'))
-document4 = loader.load_data(file=Path('Akhil-Sharma30.github.io/content/post.md'))
-document5 = loader.load_data(file=Path('Akhil-Sharma30.github.io/content/opensource.md'))
-document6 = loader.load_data(file=Path('Akhil-Sharma30.github.io/content/supervised.md'))
+loader = RemoteReader()
+
+document1 = loader.load_data(url="https://raw.githubusercontent.com/Akhil-Sharma30/Akhil-Sharma30.github.io/main/assets/README.md")
+document2 = loader.load_data(url="https://raw.githubusercontent.com/Akhil-Sharma30/Akhil-Sharma30.github.io/main/content/about.md")
+document3 = loader.load_data(url="https://raw.githubusercontent.com/Akhil-Sharma30/Akhil-Sharma30.github.io/main/content/cv.md")
+document4 = loader.load_data(url="https://raw.githubusercontent.com/Akhil-Sharma30/Akhil-Sharma30.github.io/main/content/post.md")
+document5 = loader.load_data(url="https://raw.githubusercontent.com/Akhil-Sharma30/Akhil-Sharma30.github.io/main/content/opensource.md")
+document6 = loader.load_data(url="https://raw.githubusercontent.com/Akhil-Sharma30/Akhil-Sharma30.github.io/main/content/supervised.md")
 
 data = document1+ document2 + document3+ document4 + document5+document6
 
@@ -97,7 +98,7 @@ with gr.Blocks() as demo:
           message = gr.Textbox ("know akhil?")
           message.submit(chat, [chatbot, message], chatbot)
 
-demo.queue().launch(share=True)
+demo.queue().launch()
 
 
 """# **Github Setup**"""
