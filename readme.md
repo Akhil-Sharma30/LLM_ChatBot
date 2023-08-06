@@ -3,4 +3,4 @@
 3. run llm_model.py file
 
 ## Deploy on Hugging Faces
-> link = [Akhil2_0_ChatBot](https://huggingface.co/spaces/DeveloperAkhil/Akhil2_0_ChatBot)
+> link = [Akhil2_0_ChatBot](https://huggingface.co/spaces/DeveloperAkhil/Personal-Chatbot)
