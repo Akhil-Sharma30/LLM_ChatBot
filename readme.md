@@ -1,7 +1,7 @@
 ---
-title: Personal Chatbot
-emoji: 🌍
-colorFrom: gray
+title: Akhil ChatBot
+emoji: 📊
+colorFrom: blue
 colorTo: blue
 sdk: gradio
 sdk_version: 3.39.0
@@ -10,5 +10,3 @@ pinned: false
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-
-
